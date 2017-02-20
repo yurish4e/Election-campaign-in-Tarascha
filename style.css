@@ -1,0 +1,136 @@
+.reset    {margin:0;padding:0;}
+.clear    {clear:both;}
+.cleared:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.right    {float:right;}
+.left    {float:left;}
+a img    {border:0;}
+img        {max-width:100%;}
+header, nav, section, article, aside, footer {display:block;}
+body    {margin:0;padding:0;}
+/***********************General*/
+body {
+	width: 100%;
+	font-size: 14px;
+	font-family: 'PT Serif', serif;
+	background: url(images/bg.gif);
+}
+p {
+	text-indent: 20px;
+}
+a {
+    text-decoration: none;
+}
+a, a:visited, a:hover {
+    color: black;
+}
+h1 {font-size: 18px}
+h2 {font-size: 16px}
+h3 {font-size: 14px}
+h4 {font-size: 12px}
+h5 {font-size: 10px}
+/***********************Menu*/
+nav {
+	background-color: white;
+	padding: 7px;
+	margin-top: -15px; 
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav ul {
+	display: table;
+}
+nav li {
+	display: table-cell;
+	padding-left: 30px;
+}
+nav ul li a {
+	text-decoration: none;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+li .current{
+	border-bottom: 2px solid #22419b;
+}
+/***********************Content*/
+article {
+	padding: 50px;
+	margin: 50px 50px 0 50px;
+	background-color: rgba(255,255,255,0.5);
+}
+.center-text {
+    text-align: center;
+}
+.right-text {
+    text-align: right;
+    font-style: italic;
+}
+.bold {
+    font-weight: 600;
+}
+/***********************header*/
+.img-header {
+	width: 100%;
+}
+/***********************footer*/
+footer {
+    margin-top: 50px;
+    height: 130px;
+    background: url(images/footer-bg.jpg);
+    background-repeat: repeat-x;
+}
+.just-free-space {
+    height: 100px;
+}
+.padding-left-30 {
+    padding-left: 30px;
+}
+.padding-right-30 {
+    padding-right: 30px;
+}
+.padding-top-5 {
+    padding-top: 5px;
+    font-family: 'Poiret One', cursive;
+    font-size: 16px;
+    font-weight: 600;
+}
+/*******************************/
+@media (max-width: 800px) { 
+    nav li {
+	padding-left: 15px;
+}
+    nav ul li a {
+	font-size: 15px;
+}
+    article {
+	padding: 30px;
+	margin: 30px 30px 0 30px;
+}
+}
+@media (max-width: 600px) { 
+    nav li {
+	padding-left: 10px;
+}
+    nav ul li a {
+	font-size: 12px;
+}
+    article {
+	padding: 15px;
+	margin: 15px 15px 0 15px;
+}
+}
+@media (max-width: 450px) { 
+    ul {
+        padding-left: 15px;
+    }
+    nav li {
+        padding-left: 10px;
+        display: block;
+        
+        margin-bottom: 5px;
+}
+    nav ul li a {
+	font-size: 18px;
+    padding-bottom: 0;
+}
+
+}
